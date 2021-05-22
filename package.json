@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run dev",
+    "start:dev": "npm run dev",
+    "start:db": "json-server -w db.json",
+    "start": "concurrently npm:start:*",
     "build": "webpack",
     "dev": "webpack serve --config webpack.config.js",
     "lint": "npm run clean && eslint .",
@@ -16,6 +18,7 @@
   "dependencies": {
     "@babel/runtime": "^7.14.0",
     "axios": "^0.21.1",
+    "concurrently": "^6.1.0",
     "core-js": "^3.12.1",
     "express": "^4.17.1",
     "json-server": "^0.16.3"
