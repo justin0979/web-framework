@@ -1,5 +1,4 @@
 import axios, { AxiosResponse } from "axios";
-// well
 
 interface UserProps {
   name?: string;
