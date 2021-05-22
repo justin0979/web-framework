@@ -2,8 +2,6 @@ import { User } from "./models/User";
 
 const user = new User({ id: 1 });
 
-user.fetch();
+user.set({ name: "Cow", age: 2 });
 
-setTimeout(() => {
-  console.log(user);
-}, 4000);
+user.save();
