@@ -8,6 +8,8 @@ interface UserProps {
 }
 
 export class User {
+  public events: Eventing = new Eventing();
+
   constructor(private data: UserProps) {}
 
   get(propName: string): string | number {
