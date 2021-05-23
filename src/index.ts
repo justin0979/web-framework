@@ -1,7 +1,5 @@
 import { User } from "./models/User";
 
-const user = new User({ id: 1 });
-
-user.set({ name: "Cow", age: 2 });
+const user = new User({ name: "Wolf", age: 9 });
 
 user.save();

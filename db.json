@@ -9,6 +9,16 @@
       "name": "Pups",
       "age": 12,
       "id": 2
+    },
+    {
+      "name": "Wolf",
+      "age": 9,
+      "id": 3
+    },
+    {
+      "name": "Wolf",
+      "age": 9,
+      "id": 4
     }
   ]
 }
