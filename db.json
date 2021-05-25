@@ -2,8 +2,8 @@
   "users": [
     {
       "id": 1,
-      "name": "Cow",
-      "age": 2
+      "name": "Frog",
+      "age": 0
     },
     {
       "name": "Pups",
@@ -14,26 +14,6 @@
       "name": "Wolf",
       "age": 9,
       "id": 3
-    },
-    {
-      "name": "Wolf",
-      "age": 9,
-      "id": 4
-    },
-    {
-      "name": "Wolf",
-      "age": 9,
-      "id": 5
-    },
-    {
-      "name": "Wolf",
-      "age": 9,
-      "id": 6
-    },
-    {
-      "name": "Wolf",
-      "age": 9,
-      "id": 7
     }
   ]
 }
