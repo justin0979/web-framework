@@ -54,9 +54,9 @@ export class Model<T extends HasId> {
    * var Model = (function () {
    *  function Model(events) {
    *    this.on = this.events.on; // this.events is undefined
-   *    this.events = events; // this.events defined
+   *    this.events = events;     // this.events defined
    *  }
-   * })
+   * }())
    */
 
   on = this.events.on;
