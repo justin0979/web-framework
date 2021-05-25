@@ -29,6 +29,36 @@ export class Model<T extends HasId> {
     private sync: Sync<T>,
   ) {}
 
+  /**
+   * Can only use this shortened syntax if class instances
+   * are initialized in the constructor arguements and NOT
+   * initialized in thes constructor body.
+   * If class instances are initialized in the constructor
+   * body, then the order of operations will have the
+   * class instaneces intiated after this classes own
+   * properties.
+   * i.e.
+   * class Model {
+   *  events: Events;
+   *
+   *  constructor() {
+   *   this.event = new Events()
+   *  }
+   *
+   *  on = this.events.on;
+   *
+   * }
+   *
+   * will be compiled to something like:
+   *
+   * var Model = (function () {
+   *  function Model(events) {
+   *    this.on = this.events.on; // this.events is undefined
+   *    this.events = events; // this.events defined
+   *  }
+   * })
+   */
+
   on = this.events.on;
   trigger = this.events.trigger;
   get = this.events.trigger;
