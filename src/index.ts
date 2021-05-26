@@ -1,12 +1,16 @@
-import { User } from "./models/User";
+import { Collection } from "./models/Collection";
 
 const rootDiv = document.getElementById("root");
 rootDiv.style.backgroundColor = "#333";
 rootDiv.style.height = "100vh";
 rootDiv.style.color = "#aaa";
 
-const user = User.buildUser({ id: 1 });
+const collection = new Collection(
+  "http://localhost:3000/users",
+);
 
-user.on("change", () => console.log(user));
+collection.on("change", () => {
+  console.log(collection);
+});
 
-user.fetch();
+collection.fetch();
