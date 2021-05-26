@@ -1,5 +1,4 @@
-import { Collection } from "./models/Collection";
-import { User, UserProps } from "./models/User";
+import { User } from "./models/User";
 
 const rootDiv = document.getElementById("root");
 rootDiv.style.backgroundColor = "#333";
