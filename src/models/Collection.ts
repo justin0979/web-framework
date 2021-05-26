@@ -9,5 +9,9 @@ export class Collection {
     return this.events.on;
   }
 
+  get trigger() {
+    return this.events.trigger;
+  }
+
   fetch() {}
 }
