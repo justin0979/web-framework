@@ -1,14 +1,5 @@
-import { User } from "./models/User";
+import { UserForm } from "./views/UserForm";
 
-const rootDiv = document.getElementById("root");
-rootDiv.style.backgroundColor = "#333";
-rootDiv.style.height = "100vh";
-rootDiv.style.color = "#aaa";
+const userForm = new UserForm(document.getElementById("root"));
 
-const collection = User.buildUserCollection();
-
-collection.on("change", () => {
-  console.log(collection);
-});
-
-collection.fetch();
+userForm.render();

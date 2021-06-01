@@ -1,11 +1,26 @@
+interface EventsMap {
+  [key: string]: () => void;
+}
+
 export class UserForm {
   constructor(public parent: Element) {}
+
+  eventsMap(): EventsMap {
+    return {
+      "click:button": this.onButtonClick,
+    };
+  }
+
+  onButtonClick(): void {
+    console.log("Hi there");
+  }
 
   template(): string {
     return `
     <div>
       <h1>User Form</h1>
       <input />
+      <button>Click Me</button>
     </div>
     `;
   }
