@@ -20,8 +20,7 @@
     "axios": "^0.21.1",
     "concurrently": "^6.1.0",
     "core-js": "^3.12.1",
-    "express": "^4.17.1",
-    "json-server": "^0.16.3"
+    "express": "^4.17.1"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",
