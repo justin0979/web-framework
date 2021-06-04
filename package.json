@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:dev": "npm run dev",
-    "start:db": "json-server -w db.json",
-    "start": "concurrently npm:start:*",
+    "db": "json-server -w db.json",
+    "start": "start-server-and-test db http://localhost:3000 dev",
     "build": "webpack",
     "dev": "webpack serve --config webpack.config.js",
     "lint": "npm run clean && eslint .",
