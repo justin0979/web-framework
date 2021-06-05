@@ -2,7 +2,6 @@ import { UserForm } from "./views/UserForm";
 import { User } from "./models/User";
 
 const user = User.buildUser({ name: "Justin", age: 41 });
-console.log(user.get("name"));
 
 const userForm = new UserForm(
   document.getElementById("root"),
@@ -10,3 +9,7 @@ const userForm = new UserForm(
 );
 
 userForm.render();
+
+setTimeout(() => {
+  console.log(user.get("name"));
+}, 3000);
