@@ -30,6 +30,7 @@ export class Model<T extends HasId> {
   ) {}
 
   /**
+   * Shortened syntax is very brittle.
    * Can only use this shortened syntax if class instances
    * are initialized in the constructor arguements and NOT
    * initialized in thes constructor body.
