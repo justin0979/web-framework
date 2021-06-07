@@ -36,7 +36,7 @@ export class Model<T extends HasId> {
    * initialized in thes constructor body.
    * If class instances are initialized in the constructor
    * body, then the order of operations will have the
-   * class instaneces intiated after this classes own
+   * class instaneces intiated after this class' own
    * properties.
    * i.e.
    * class Model {
@@ -59,7 +59,6 @@ export class Model<T extends HasId> {
    *  }
    * }())
    */
-
   on = this.events.on;
   trigger = this.events.trigger;
   get = this.attributes.get;
