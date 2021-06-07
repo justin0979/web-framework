@@ -9,7 +9,3 @@ const userForm = new UserForm(
 );
 
 userForm.render();
-
-setTimeout(() => {
-  console.log(user.get("name"));
-}, 3000);
