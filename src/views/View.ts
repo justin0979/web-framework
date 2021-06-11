@@ -53,6 +53,10 @@ export abstract class View<T extends Model<K>, K> {
     }
   }
 
+  /**
+   *  onRender()
+   *  Only defined in classes that show a view.
+   */
   onRender(): void {}
 
   render(): void {
